@@ -8,15 +8,6 @@
         "revision" : "19b3c3ceed117c5cc883517c4e658548315ba70b",
         "version" : "1.6.0"
       }
-    },
-    {
-      "identity" : "gateway",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/progressautify/Gateway.git",
-      "state" : {
-        "branch" : "main",
-        "revision" : "20cb7d192b54f6062f035c0e83e1fb9126c81dc7"
-      }
     }
   ],
   "version" : 2

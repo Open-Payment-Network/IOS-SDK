@@ -15,7 +15,7 @@
 		B14B9F962988FDC500CBD9AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14B9F942988FDC500CBD9AF /* LaunchScreen.storyboard */; };
 		B14B9F9E2988FF0500CBD9AF /* DirectPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14B9F9D2988FF0500CBD9AF /* DirectPaymentViewController.swift */; };
 		B14B9FA02988FF1D00CBD9AF /* HostedPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14B9F9F2988FF1D00CBD9AF /* HostedPaymentViewController.swift */; };
-		B14F99AD299D1B0A00DBCD54 /* Gateway in Frameworks */ = {isa = PBXBuildFile; productRef = B14F99AC299D1B0A00DBCD54 /* Gateway */; };
+		B1C60024299E833C005F3D3E /* Gateway in Frameworks */ = {isa = PBXBuildFile; productRef = B1C60023299E833C005F3D3E /* Gateway */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +29,7 @@
 		B14B9F972988FDC500CBD9AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B14B9F9D2988FF0500CBD9AF /* DirectPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectPaymentViewController.swift; sourceTree = "<group>"; };
 		B14B9F9F2988FF1D00CBD9AF /* HostedPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostedPaymentViewController.swift; sourceTree = "<group>"; };
+		B1C60021299E81A2005F3D3E /* Gateway */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Gateway; path = ../Gateway; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B14F99AD299D1B0A00DBCD54 /* Gateway in Frameworks */,
+				B1C60024299E833C005F3D3E /* Gateway in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +47,7 @@
 		B14B9F7D2988FDC000CBD9AF = {
 			isa = PBXGroup;
 			children = (
+				B1C60020299E81A2005F3D3E /* Packages */,
 				B14B9F882988FDC100CBD9AF /* src */,
 				B14B9F872988FDC100CBD9AF /* Products */,
 				B1C4BF812995328900A02495 /* Frameworks */,
@@ -83,6 +85,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B1C60020299E81A2005F3D3E /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				B1C60021299E81A2005F3D3E /* Gateway */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,7 +110,7 @@
 			);
 			name = sample;
 			packageProductDependencies = (
-				B14F99AC299D1B0A00DBCD54 /* Gateway */,
+				B1C60023299E833C005F3D3E /* Gateway */,
 			);
 			productName = PaymentDemo;
 			productReference = B14B9F862988FDC100CBD9AF /* sample.app */;
@@ -131,7 +141,6 @@
 			);
 			mainGroup = B14B9F7D2988FDC000CBD9AF;
 			packageReferences = (
-				B14F99AB299D1B0A00DBCD54 /* XCRemoteSwiftPackageReference "Gateway" */,
 			);
 			productRefGroup = B14B9F872988FDC100CBD9AF /* Products */;
 			projectDirPath = "";
@@ -387,21 +396,9 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		B14F99AB299D1B0A00DBCD54 /* XCRemoteSwiftPackageReference "Gateway" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/progressautify/Gateway.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		B14F99AC299D1B0A00DBCD54 /* Gateway */ = {
+		B1C60023299E833C005F3D3E /* Gateway */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B14F99AB299D1B0A00DBCD54 /* XCRemoteSwiftPackageReference "Gateway" */;
 			productName = Gateway;
 		};
 /* End XCSwiftPackageProductDependency section */
